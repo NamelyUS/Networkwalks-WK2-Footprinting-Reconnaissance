@@ -1,0 +1,34 @@
+Server:		1.1.1.1
+Address:	1.1.1.1#53
+
+Non-authoritative answer:
+Name:	networkwalks.com
+Address: 192.232.216.135
+
+Field		result
+DNS Server	1.1.1.1
+DNS Port	53
+Domain		networkwalks.com
+Resolved IP	192.232.216.135
+Response type	Non-authoritative
+
+
+### Task 3: DNS Resolution Using NSLookup
+
+Target: networkwalks.com  
+Tool: NSLookup (9.20.15-2-Debian)  
+Command: `nslookup networkwalks.com`
+
+Objective: To resolve the target domain name into its corresponding IP address using DNS.
+
+Findings:
+
+- DNS resolver used: 1.1.1.1 (Cloudflare).
+- DNS service port: 53.
+- Target domain: networkwalks.com.
+- Resolved IPv4 address: 192.232.216.135.
+- Response type: Non-authoritative answer.
+
+Conclusion:
+
+NSLookup successfully resolved networkwalks.com to IPv4 address 192.232.216.135. The result matches the IP address previously identified using WhatWeb, providing consistency between the reconnaissance findings.
